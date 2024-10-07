@@ -9,7 +9,7 @@ API_TOKEN = '7719954043:AAFu8-nkq29EAuvKoiY1kuARNwqspu9dTEo'
 GOOGLE_SHEETS_CREDENTIALS_FILE = 'deliverysaves-702cc766d001.json'
 SPREADSHEET_ID = '1YKI0CMHQ22rqEdTzsV0lAIWYl2j1b1fmVUC-Z4ZKMpM'
 SHEET_NAME = 'S'
-TOPIC_NAME = 2
+TOPIC_NAME = 7
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -27,7 +27,6 @@ sheet = client.open_by_key(SPREADSHEET_ID).worksheet(SHEET_NAME)
 @dp.message()
 async def save_message(message: types.Message):
     print(message.message_thread_id)
-    print(message.text)
     try:
         if message.is_topic_message and message.message_thread_id is not None:
             topic_name = message.message_thread_id  # Здесь нужно получить имя топика, если это возможно
