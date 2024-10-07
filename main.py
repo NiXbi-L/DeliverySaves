@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, types
 import asyncio
 
 # Настройки
-API_TOKEN = '7719954043:AAFu8-nkq29EAuvKoiY1kuARNwqspu9dTEo'
+API_TOKEN = ''
 GOOGLE_SHEETS_CREDENTIALS_FILE = 'deliverysaves-702cc766d001.json'
 SPREADSHEET_ID = '1YKI0CMHQ22rqEdTzsV0lAIWYl2j1b1fmVUC-Z4ZKMpM'
 SHEET_NAME = 'S'
